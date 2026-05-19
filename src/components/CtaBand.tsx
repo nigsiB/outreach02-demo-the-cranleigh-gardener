@@ -32,7 +32,7 @@ export function CtaBand({
     <section className={`w-full ${bandClassName} ${className}`.trim()}>
       <div className="section-inner">
       <div
-        className={`grid items-center gap-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm lg:grid-cols-2 ${
+        className={`grid items-center gap-8 overflow-hidden border border-slate-200 bg-white shadow-sm lg:grid-cols-2 ${
           reverse ? "lg:[&>div:first-child]:order-2" : ""
         }`}
       >

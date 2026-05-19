@@ -76,7 +76,7 @@ export default function Page() {
       <section className="section-band-green-a">
         <div className="section-inner">
           <div className="grid items-center gap-10 lg:grid-cols-2">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
+            <div className="relative aspect-[4/3] overflow-hidden">
               <Image src={aboutImg} alt="Garden patio project" fill className="object-cover" sizes="50vw" />
             </div>
             <div>
@@ -121,10 +121,10 @@ export default function Page() {
         <div className="section-inner pb-14">
           <h2 className="font-serif text-3xl text-[var(--green)]">Before &amp; after</h2>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
-            <div className="relative aspect-[16/10] overflow-hidden rounded-xl">
+            <div className="relative aspect-[16/10] overflow-hidden">
               <Image src={heroImg} alt="Garden transformation" fill className="object-cover" sizes="50vw" />
             </div>
-            <div className="relative aspect-[16/10] overflow-hidden rounded-xl">
+            <div className="relative aspect-[16/10] overflow-hidden">
               <Image src={galleryImg} alt="Patio and borders" fill className="object-cover" sizes="50vw" />
             </div>
           </div>
