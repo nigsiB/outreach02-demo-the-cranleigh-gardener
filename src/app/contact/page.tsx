@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ContactForm } from "@/components/ContactForm";
 
 const contactHeroImg =
-  "https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1200&q=80";
+  "https://static.wixstatic.com/media/5bd9f2_2e6bc4b45da1415f98e69e1817086455~mv2.jpeg";
 
 export default function ContactPage() {
   return (
@@ -12,7 +12,7 @@ export default function ContactPage() {
         <div className="relative min-h-[min(50vw,28rem)] lg:min-h-0 lg:h-full">
           <Image
             src={contactHeroImg}
-            alt="Garden landscaping and outdoor transformation"
+            alt="Cottage-style planting and seating in a Cranleigh garden"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"

@@ -3,16 +3,19 @@ import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
 import { ServiceCard } from "@/components/ServiceCard";
 
-const heroImg = "https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1600&q=80";
-const aboutImg = "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1600&q=80";
-const galleryImg = "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1600&q=80";
+const plantedBorderImg = "https://static.wixstatic.com/media/5bd9f2_63c8a967eca14e9bbb5ba5ac17134a02~mv2.jpeg";
+const cottageGardenImg = "https://static.wixstatic.com/media/5bd9f2_2e6bc4b45da1415f98e69e1817086455~mv2.jpeg";
+const finishedLawnImg = "https://static.wixstatic.com/media/5bd9f2_1996296ab32c4c3a93c249c3363e44a5~mv2.jpeg";
+const rosePlantingImg = "https://static.wixstatic.com/media/5bd9f2_b39eec48c1234fe6b607c8ae0482eee7~mv2_d_3024_4032_s_4_2.jpg";
+const flowerBedImg = "https://static.wixstatic.com/media/5bd9f2_60e9856b67264c02871d22ce910e0c65~mv2.jpeg";
+const patioImg = "https://static.wixstatic.com/media/5bd9f2_47eba6f74e5548d0bb48b58fea5f0040~mv2.jpeg";
 
 const services = [
-  { image: "https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=600&q=80", alt: "Garden landscaping", title: "Landscaping", desc: "Full garden redesigns, planting, and lawn restoration." },
-  { image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=600&q=80", alt: "Garden patio paving", title: "Patios & paving", desc: "Porcelain, natural stone, and drainage done properly." },
-  { image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=600&q=80", alt: "Garden pergola structure", title: "Pergolas & structures", desc: "Timber features that frame your outdoor living." },
-  { image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80", alt: "Garden maintenance", title: "Maintenance", desc: "Regular visits to keep borders and hedges sharp." },
-  { image: "https://images.unsplash.com/photo-1643701079732-3b1c7a797e3d?auto=format&fit=crop&w=600&q=80", alt: "Tree and hedge work", title: "Tree & hedge work", desc: "Reductions, shaping, and clearance." },
+  { image: finishedLawnImg, alt: "Finished Surrey garden with lawn and planted borders", title: "Landscaping", desc: "Full garden redesigns, planting, and lawn restoration." },
+  { image: patioImg, alt: "Natural stone patio with timber raised beds", title: "Patios & paving", desc: "Porcelain, natural stone, and drainage done properly." },
+  { image: cottageGardenImg, alt: "Cottage garden seating area with flowering borders", title: "Pergolas & structures", desc: "Timber features that frame your outdoor living." },
+  { image: plantedBorderImg, alt: "Neat lawn edge with mixed planting beside a fence", title: "Maintenance", desc: "Regular visits to keep borders and hedges sharp." },
+  { image: flowerBedImg, alt: "Climbers and flowering plants in a UK garden bed", title: "Tree & hedge work", desc: "Reductions, shaping, and clearance." },
 ];
 
 const reviews = [
@@ -26,8 +29,8 @@ export default function Page() {
     <main>
       <section className="relative min-h-[32rem] overflow-hidden py-28 px-6 text-center text-white sm:min-h-[36rem]">
         <Image
-          src={heroImg}
-          alt="Landscaped garden"
+          src={plantedBorderImg}
+          alt="Planted garden border and lawn in a Surrey garden"
           fill
           className="object-cover brightness-[0.72] saturate-[0.92]"
           priority
@@ -77,7 +80,7 @@ export default function Page() {
         <div className="section-inner">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div className="relative aspect-[4/3] overflow-hidden">
-              <Image src={aboutImg} alt="Garden patio project" fill className="object-cover" sizes="50vw" />
+              <Image src={finishedLawnImg} alt="Finished lawn and planting design beside a new-build home" fill className="object-cover" sizes="50vw" />
             </div>
             <div>
               <h2 className="font-serif text-3xl text-[var(--green)]">Why Cranleigh chooses us</h2>
@@ -92,8 +95,8 @@ export default function Page() {
 
       <CtaBand
         bandClassName="section-band-brown-a"
-        image={galleryImg}
-        imageAlt="Pergola and planting"
+        image={cottageGardenImg}
+        imageAlt="Cottage-style garden planting around a seating area"
         title="Book a site visit"
         body="7 Sylvaways Close — free quotes for landscaping and hard landscaping. Demo site."
         primaryHref="/contact"
@@ -122,10 +125,10 @@ export default function Page() {
           <h2 className="font-serif text-3xl text-[var(--green)]">Before &amp; after</h2>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             <div className="relative aspect-[16/10] overflow-hidden">
-              <Image src={heroImg} alt="Garden transformation" fill className="object-cover" sizes="50vw" />
+              <Image src={plantedBorderImg} alt="Curved lawn with established mixed planting" fill className="object-cover" sizes="50vw" />
             </div>
             <div className="relative aspect-[16/10] overflow-hidden">
-              <Image src={galleryImg} alt="Patio and borders" fill className="object-cover" sizes="50vw" />
+              <Image src={patioImg} alt="Completed stone patio and timber raised beds" fill className="object-cover" sizes="50vw" />
             </div>
           </div>
         </div>
@@ -134,8 +137,8 @@ export default function Page() {
       <CtaBand
         bandClassName="section-band-green-c"
         reverse
-        image={aboutImg}
-        imageAlt="The Cranleigh Gardener"
+        image={rosePlantingImg}
+        imageAlt="Pink roses growing in a mature garden border"
         title="Ready for a new garden?"
         body="Patios, pergolas, planting, and maintenance — call or message to start."
         primaryHref="tel:07871388326"
