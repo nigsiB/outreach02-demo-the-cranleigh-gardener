@@ -32,9 +32,10 @@ export function CtaBand({
     <section className={`w-full ${bandClassName} ${className}`.trim()}>
       <div className="section-inner">
       <div
-        className={`grid items-center gap-8 overflow-hidden border border-slate-200 bg-white shadow-sm lg:grid-cols-2 ${
+        className={`reveal-build grid items-center gap-8 overflow-hidden border border-slate-200 bg-white shadow-sm lg:grid-cols-2 ${
           reverse ? "lg:[&>div:first-child]:order-2" : ""
         }`}
+        data-reveal
       >
         <div className="relative min-h-[240px] lg:min-h-[300px]">
           <Image src={image} alt={imageAlt} fill className="object-cover" sizes="(min-width: 1024px) 50vw, 100vw" />

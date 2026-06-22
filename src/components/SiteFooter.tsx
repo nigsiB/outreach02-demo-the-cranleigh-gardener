@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function SiteFooter() {
@@ -8,9 +9,9 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-6 py-14">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <Link href="/" className="text-xl font-bold tracking-tight">
-            The Cranleigh Gardener
-          </Link>
+            <Link href="/" className="inline-flex rounded-sm">
+              <Image src="/cranleigh-gardener-logo-white.png" alt="The Cranleigh Gardener" width={706} height={183} className="h-auto w-[220px] sm:w-[260px]" />
+            </Link>
             <p className="mt-4 max-w-md text-sm leading-relaxed opacity-80">Landscaping, patios & garden maintenance.</p>
           </div>
 
